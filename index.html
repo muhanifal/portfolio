@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Hanif Alamsyah - Portfolio</title>
+    <title>Muhammad Hanif Alamsyah | Digital Creator & Analyst</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header>
+    <!-- Navigation -->
+    <header id="header">
         <div class="container">
             <nav>
-                <a href="#" class="logo">Hanif<span>Portfolio</span></a>
-                <div class="menu-toggle" id="menu-toggle">
+                <a href="#home" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span class="logo-gradient">Hanif</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
                     <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#profile">Profil</a></li>
-                    <li><a href="#skills">Kemampuan</a></li>
-                    <li><a href="#experience">Pengalaman</a></li>
-                    <li><a href="#certificates">Sertifikat</a></li>
-                    <li><a href="#contact">Kontak</a></li>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#profile" class="nav-link">Profile</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,157 +34,161 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-elements" id="floatingElements"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>MUHAMMAD HANIF ALAMSYAH</h1>
-                <p class="hero-subtitle">Mahasiswa Sistem Informasi | Desainer Grafis | Music Producer | Content Creator</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Jakarta Selatan</span>
+                <div class="hero-text fade-in">
+                    <span class="section-subtitle">Welcome to my portfolio</span>
+                    <h1>Muhammad Hanif Alamsyah</h1>
+                    <p class="hero-tagline">
+                        Information Systems Student · Creative Designer · Music Producer · 
+                        Digital Content Creator · Business Analyst Enthusiast
+                    </p>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-chip" data-tooltip="Email me">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <div style="font-size: 0.9rem; color: var(--text-tertiary);">Email</div>
+                                <div>alamsyahhanif828@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-chip" data-tooltip="Call me">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <div style="font-size: 0.9rem; color: var(--text-tertiary);">Phone</div>
+                                <div>+62 856 9364 9674</div>
+                            </div>
+                        </div>
+                        <div class="contact-chip" data-tooltip="Location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <div style="font-size: 0.9rem; color: var(--text-tertiary);">Location</div>
+                                <div>South Jakarta, Indonesia</div>
+                            </div>
+                        </div>
+                        <div class="contact-chip" data-tooltip="Date of Birth">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <div style="font-size: 0.9rem; color: var(--text-tertiary);">Date of Birth</div>
+                                <div>February 7, 2005</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>alamsyahhanif828@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+6285693649674</span>
+                    
+                    <div class="btn-container">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                        <a href="#experience" class="btn btn-secondary">
+                            <i class="fas fa-briefcase"></i>
+                            <span>View Experience</span>
+                        </a>
                     </div>
                 </div>
                 
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-birthday-cake"></i>
-                        <span>Jakarta, 07 Februari 2005</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <span>bit.ly/mhanifa</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-briefcase"></i>
-                        <span>bit.ly/HanifPorto</span>
-                    </div>
+                <div class="hero-photo fade-in" style="animation-delay: 0.3s;">
+                    <div class="photo-glow"></div>
+                    <img src="img/Foto Formal.jpeg" 
+                         alt="Muhammad Hanif Alamsyah" 
+                         class="profile-photo">
                 </div>
-                
-                <a href="#contact" class="btn">Hubungi Saya</a>
             </div>
         </div>
     </section>
 
-    <!-- Profile & Education Section -->
-    <section id="profile" class="profile">
+    <!-- Profile Section -->
+    <section id="profile">
         <div class="container">
-            <h2>Profil & Pendidikan</h2>
-            <div class="profile-content">
-                <div class="profile-text">
-                    <p>Mahasiswa dengan kemampuan komunikasi, kreativitas, dan penguasaan software desain, musik, video editing, database dan pemrograman. Berminat mengembangkan karier di bidang analisis bisnis dan teknologi digital dengan dasar pengetahuan sistem informasi dan cloud computing.</p>
-                    <a href="#contact" class="btn btn-outline">Kontak Saya</a>
+            <div class="section-header">
+                <span class="section-subtitle">About Me</span>
+                <h2>Profile & <span class="highlight">Education</span></h2>
+            </div>
+            
+            <div class="profile-grid">
+                <div class="fade-in">
+                    <p>
+                        A student with strong communication skills, creativity, and mastery of design software, 
+                        music production, video editing, databases, and programming. Passionate about developing 
+                        a career in business analysis and digital technology with a solid foundation in 
+                        information systems and cloud computing.
+                    </p>
+                    <p>
+                        I am a multi-talented individual with passion in various creative and technological fields. 
+                        The combination of technical skills with creativity enables me to produce innovative and 
+                        effective solutions.
+                    </p>
+                    <p>
+                        Currently pursuing a degree in Information Systems while actively working on freelance 
+                        projects in music production, content creation, and digital design.
+                    </p>
                 </div>
                 
-                <div class="education">
-                    <div class="education-item">
-                        <h3>UNIVERSITAS GUNADARMA</h3>
-                        <div class="education-meta">
-                            <span>Jakarta, Indonesia</span>
-                            <span>2023 - Sekarang</span>
-                        </div>
-                        <p class="education-detail"><strong>Sistem Informasi</strong></p>
-                        <p class="education-detail">IP: 3.56/4.00</p>
+                <div class="education-card fade-in" style="animation-delay: 0.2s;">
+                    <h3>Gunadarma University</h3>
+                    <div class="education-meta">
+                        <span>Jakarta, Indonesia</span>
+                        <span>2023 - Present</span>
                     </div>
+                    <p><strong>Bachelor of Information Systems</strong></p>
+                    <p>
+                        Comprehensive education program combining information technology with business, 
+                        preparing students to become professionals in information systems.
+                    </p>
+                    <div class="gpa-badge">GPA: 3.56/4.00</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+    <section id="skills">
         <div class="container">
-            <h2>Kemampuan Teknis & Soft Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Software & Teknologi</h3>
-                    <ul class="skill-list">
-                        <li><i class="fas fa-check"></i> Microsoft Office (Word, Excel, PowerPoint)</li>
-                        <li><i class="fas fa-check"></i> Graphic Design (Canva, Adobe Illustrator)</li>
-                        <li><i class="fas fa-check"></i> Data dan Programming (MySQL, VSCode)</li>
-                        <li><i class="fas fa-check"></i> FL Studio 20</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul class="skill-list">
-                        <li><i class="fas fa-check"></i> Komunikasi Efektif</li>
-                        <li><i class="fas fa-check"></i> Kerjasama Tim</li>
-                        <li><i class="fas fa-check"></i> Manajemen Waktu</li>
-                        <li><i class="fas fa-check"></i> Kreativitas</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Bidang Minat</h3>
-                    <ul class="skill-list">
-                        <li><i class="fas fa-check"></i> Analisis Bisnis</li>
-                        <li><i class="fas fa-check"></i> Teknologi Digital</li>
-                        <li><i class="fas fa-check"></i> Sistem Informasi</li>
-                        <li><i class="fas fa-check"></i> Cloud Computing</li>
-                    </ul>
-                </div>
+            <div class="section-header">
+                <span class="section-subtitle">My Expertise</span>
+                <h2>Technical & <span class="highlight">Soft Skills</span></h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2>Pengalaman Kerja & Freelance</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>CBM Production</h3>
-                        <div class="timeline-meta">Music Producer (Freelance) | Maret 2024 - Sekarang</div>
-                        <ul>
-                            <li>Mengaransemen instrumen untuk konten cover lagu dengan rata- rata 500+ views di YouTube per rilisan.</li>
-                            <li>Mengelola seluruh proses produksi musik (recording, mixing, mastering) menggunakan FL Studio 20, dengan durasi pengerjaan ±2 bulan per project hingga siap dipublikasikan.</li>
+            
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Technical Skills</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> Microsoft Office Suite</li>
+                            <li><i class="fas fa-check"></i> Graphic Design Tools</li>
+                            <li><i class="fas fa-check"></i> Database & Programming</li>
+                            <li><i class="fas fa-check"></i> FL Studio 20</li>
                         </ul>
                     </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Natura Entertainment</h3>
-                        <div class="timeline-meta">Guitaris (Freelance) | Juli 2024 - Sekarang</div>
-                        <ul>
-                            <li>Mengisi acara pernikahan dengan permainan gitar yang mendukung suasana sakral dan meriah.</li>
-                            <li>Membawakan part solo gitar pada proyek musik kolaboratif yang dipublikasikan.</li>
-                            <li>Berkolaborasi dengan keyboardist untuk menciptakan suasana hangat dalam acara nonformal seperti kafe dan private event.</li>
+                    
+                    <div class="skill-card fade-in" style="animation-delay: 0.2s;">
+                        <div class="skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Soft Skills</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> Effective Communication</li>
+                            <li><i class="fas fa-check"></i> Team Collaboration</li>
+                            <li><i class="fas fa-check"></i> Time Management</li>
+                            <li><i class="fas fa-check"></i> Creative Problem Solving</li>
                         </ul>
                     </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Amoplus Magazine</h3>
-                        <div class="timeline-meta">Intern Content Creator | Agustus 2022 - November 2022</div>
-                        <ul>
-                            <li>Mengedit 10+ video untuk Instagram & TikTok dengan rata-rata 300+ views per posting.</li>
-                            <li>Menulis 2+ artikel produk musik yang dipublikasikan di website resmi Amoplus.</li>
-                            <li>Melakukan liputan sebagai wartawan dalam 3+ event musik lokal, mendukung tim redaksi dalam penyusunan konten.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>NovelMe</h3>
-                        <div class="timeline-meta">Writer (Freelance) | 2022 - 2023</div>
-                        <ul>
-                            <li>Menyusun kerangka cerita yang berhasil lolos tahap pengajuan kontrak penerbitan.</li>
-                            <li>Mengembangkan ide menjadi cerita sesuai kerangka, dengan konsistensi memenuhi target kata harian untuk setiap chapter.</li>
-                            <li>Menghasilkan naskah yang dipublikasikan di platform digital NovelMe dan menjangkau pembaca reguler.</li>
+                    
+                    <div class="skill-card fade-in" style="animation-delay: 0.4s;">
+                        <div class="skill-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Areas of Interest</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> Business Analysis</li>
+                            <li><i class="fas fa-check"></i> Digital Technology</li>
+                            <li><i class="fas fa-check"></i> Cloud Computing</li>
+                            <li><i class="fas fa-check"></i> Content Strategy</li>
                         </ul>
                     </div>
                 </div>
@@ -189,57 +196,186 @@
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
+    <!-- Experience Section - COMPLETE -->
+    <section id="experience">
         <div class="container">
-            <h2>Pelatihan & Sertifikat</h2>
+            <div class="section-header">
+                <span class="section-subtitle">My Journey</span>
+                <h2>Professional <span class="highlight">Experience</span></h2>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline">
+                    <!-- CBM Production -->
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3>CBM Production</h3>
+                                    <p>Music Producer (Freelance)</p>
+                                </div>
+                                <div class="experience-date">March 2024 - Present</div>
+                            </div>
+                            <p><em>Jakarta, Indonesia</em></p>
+                            <ul class="experience-list">
+                                <li>Arranged instruments for song cover content with average 500+ views per YouTube release</li>
+                                <li>Managed complete music production process (recording, mixing, mastering) using FL Studio 20</li>
+                                <li>Average project duration ±2 months from start to publication readiness</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Natura Entertainment -->
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3>Natura Entertainment</h3>
+                                    <p>Guitarist (Freelance)</p>
+                                </div>
+                                <div class="experience-date">July 2024 - Present</div>
+                            </div>
+                            <p><em>Jakarta, Indonesia</em></p>
+                            <ul class="experience-list">
+                                <li>Performed at wedding events with guitar playing supporting sacred and festive atmospheres</li>
+                                <li>Performed guitar solo parts on published collaborative music projects</li>
+                                <li>Collaborated with keyboardist to create warm atmosphere in informal events like cafes and private events</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Amoplus Magazine -->
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3>Amoplus Magazine</h3>
+                                    <p>Content Creator Intern</p>
+                                </div>
+                                <div class="experience-date">August - November 2022</div>
+                            </div>
+                            <p><em>Jakarta, Indonesia</em></p>
+                            <ul class="experience-list">
+                                <li>Edited 10+ videos for Instagram & TikTok with average 300+ views per post</li>
+                                <li>Wrote 2+ music product articles published on official Amoplus website</li>
+                                <li>Covered 3+ local music events as journalist, supporting editorial team in content preparation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- NovelMe -->
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div>
+                                    <h3>NovelMe</h3>
+                                    <p>Writer (Freelance)</p>
+                                </div>
+                                <div class="experience-date">2022 - 2023</div>
+                            </div>
+                            <p><em>Jakarta, Indonesia</em></p>
+                            <ul class="experience-list">
+                                <li>Developed story frameworks that passed publishing contract submission stage</li>
+                                <li>Developed ideas into stories according to framework, consistently meeting daily word targets for each chapter</li>
+                                <li>Produced manuscripts published on NovelMe digital platform reaching regular readers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section - ALL CERTIFICATES -->
+    <section id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Qualifications</span>
+                <h2>Certifications & <span class="highlight">Training</span></h2>
+            </div>
+            
             <div class="certificates-grid">
+                <!-- Row 1 -->
                 <div class="certificate-card">
                     <h3>Introduction to Microsoft Excel</h3>
-                    <p>Simplilearn, 2025</p>
-                    <a href="https://drive.google.com/file/d/19Ed1_GvZJDQMmTj37SvCGVvFWe-AShBQ/view?usp=drive_link" target="_blank" class="certificate-link">Lihat Sertifikat <i class="fas fa-external-link-alt"></i></a>
+                    <div class="certificate-meta">Simplilearn · 2025</div>
+                    <p>Fundamental skills in spreadsheet management, data analysis, and visualization using Microsoft Excel.</p>
+                    <a href="https://drive.google.com/file/d/19Ed1_GvZJDQMmTj37SvCGVvFWe-AShBQ/view?usp=drive_link" target="_blank" class="certificate-link">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
                 
                 <div class="certificate-card">
-                    <h3>Pelatihan Mengetik Tingkat Lanjut</h3>
-                    <p>2025</p>
-                    <a href="https://drive.google.com/file/d/1b4adFdewOux1sbrr9k0wPQXvePFozZFv/view?usp=drive_link" target="_blank" class="certificate-link">Lihat Sertifikat <i class="fas fa-external-link-alt"></i></a>
+                    <h3>Advanced Typing Training</h3>
+                    <div class="certificate-meta">2025</div>
+                    <p>Advanced typing skills training for improved productivity and accuracy in document creation.</p>
+                    <a href="https://drive.google.com/file/d/1b4adFdewOux1sbrr9k0wPQXvePFozZFv/view?usp=drive_link" target="_blank" class="certificate-link">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
                 
                 <div class="certificate-card">
-                    <h3>Miniclass Competitive Programming</h3>
-                    <p>2025</p>
-                    <a href="https://drive.google.com/file/d/1STMzr1qaVNLtnnG688YI_4jWVc2qLWKO/view?usp=drive_link" target="_blank" class="certificate-link">Lihat Sertifikat <i class="fas fa-external-link-alt"></i></a>
+                    <h3>Competitive Programming Miniclass</h3>
+                    <div class="certificate-meta">2025</div>
+                    <p>Algorithm design, problem-solving, and programming competition preparation.</p>
+                    <a href="https://drive.google.com/file/d/1STMzr1qaVNLtnnG688YI_4jWVc2qLWKO/view?usp=drive_link" target="_blank" class="certificate-link">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
                 
+                <!-- Row 2 -->
                 <div class="certificate-card">
                     <h3>AWS Cloud Practitioner Essentials</h3>
-                    <p>2025</p>
-                    <a href="https://drive.google.com/file/d/1SayDOcb56lDwkc0XRN9gAcBPt6R5EWOw/view?usp=drive_link" target="_blank" class="certificate-link">Lihat Sertifikat <i class="fas fa-external-link-alt"></i></a>
+                    <div class="certificate-meta">Amazon Web Services · 2025</div>
+                    <p>Fundamental understanding of AWS Cloud concepts, services, security, architecture, and pricing.</p>
+                    <a href="https://drive.google.com/file/d/1SayDOcb56lDwkc0XRN9gAcBPt6R5EWOw/view?usp=drive_link" target="_blank" class="certificate-link">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
                 
                 <div class="certificate-card">
-                    <h3>Pelatihan Instalasi LAN Nirkabel</h3>
-                    <p>2024</p>
-                    <a href="https://drive.google.com/file/d/1knhw_y6CFO-KKMGwPBRVToPEjPMKXsDf/view?usp=drive_link" target="_blank" class="certificate-link">Lihat Sertifikat <i class="fas fa-external-link-alt"></i></a>
+                    <h3>Wireless LAN Installation Training</h3>
+                    <div class="certificate-meta">2024</div>
+                    <p>Training on wireless LAN installation, configuration, and troubleshooting.</p>
+                    <a href="https://drive.google.com/file/d/1knhw_y6CFO-KKMGwPBRVToPEjPMKXsDf/view?usp=drive_link" target="_blank" class="certificate-link">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
                 
                 <div class="certificate-card">
-                    <h3>Pelatihan Aplikasi Perkantoran</h3>
-                    <p>AMI, 2023</p>
-                    <a href="https://drive.google.com/file/d/11TCnfqsmqmcDd-3KmiE2Sc1wa1BzwQ_b/view?usp=drive_link" target="_blank" class="certificate-link">Lihat Sertifikat <i class="fas fa-external-link-alt"></i></a>
+                    <h3>Office Applications Training</h3>
+                    <div class="certificate-meta">AMI · 2023</div>
+                    <p>Office application training covering productivity tools and software for professional use.</p>
+                    <a href="https://drive.google.com/file/d/11TCnfqsmqmcDd-3KmiE2Sc1wa1BzwQ_b/view?usp=drive_link" target="_blank" class="certificate-link">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="certificate-card">
+                    <h3>English Language Training</h3>
+                    <div class="certificate-meta">I-Tech Language Center · 2023</div>
+                    <p>English language training focusing on communication skills for professional environments.</p>
+                    <a href="https://drive.google.com/file/d/1kfs_Nma4JH0v0jqb8M6ZARFqnhXBDcDz/view?usp=drive_link" target="_blank" class="certificate-link">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
                 
                 <div class="certificate-card">
-                    <h3>Pelatihan Bahasa Inggris</h3>
-                    <p>I-Tech Language Center, 2023</p>
-                    <a href="https://drive.google.com/file/d/1kfs_Nma4JH0v0jqb8M6ZARFqnhXBDcDz/view?usp=drive_link" target="_blank" class="certificate-link">Lihat Sertifikat <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                
-                <div class="certificate-card">
-                    <h3>Kompetensi Jasa Multimedia</h3>
-                    <p>BNSP, 2023</p>
-                    <a href="https://drive.google.com/file/d/1ciYnbc3aFwG3qCLQtgTXkA5UgkQt0w38/view?usp=drive_link" target="_blank" class="certificate-link">Lihat Sertifikat <i class="fas fa-external-link-alt"></i></a>
+                    <h3>Multimedia Services Competency</h3>
+                    <div class="certificate-meta">BNSP Certified · 2023</div>
+                    <p>Professional competency certification in multimedia services and production.</p>
+                    <a href="https://drive.google.com/file/d/1ciYnbc3aFwG3qCLQtgTXkA5UgkQt0w38/view?usp=drive_link" target="_blank" class="certificate-link">
+                        <span>View Certificate</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -249,40 +385,78 @@
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Tentang Saya</h3>
-                    <p>Mahasiswa Sistem Informasi Universitas Gunadarma dengan IPK 3.56/4.00. Memiliki minat dalam analisis bisnis, teknologi digital, dan cloud computing dengan pengalaman di berbagai bidang kreatif seperti desain grafis, produksi musik, dan penulisan konten.</p>
+                <div class="footer-section fade-in">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        Interested in collaboration or opportunities in digital technology, 
+                        business analysis, or creative projects? Feel free to reach out.
+                    </p>
                     <div class="social-links">
-                        <a href="bit.ly/mhanifa" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/hanifhaniff/" target="_blank" class="social-link" title="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="mailto:alamsyahhanif828@gmail.com" class="social-link">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=alamsyahhanif828@gmail.com&su=Portfolio%20Inquiry%20-%20Muhammad%20Hanif%20Alamsyah&body=Dear%20Hanif%2C%0A%0AI%20visited%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D" class="social-link" title="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        <a href="tel:+6285693649674" class="social-link">
+                        <a href="https://wa.me/6285693649674" class="social-link" title="Phone">
                             <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1NZmNxSJFey4Mqj3e9Fban-IzUEGfq0_R?usp=drive_link" target="_blank" class="social-link" title="Portfolio">
+                            <i class="fas fa-briefcase"></i>
                         </a>
                     </div>
                 </div>
                 
-                <div class="footer-section">
-                    <h3>Kontak</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Jakarta Selatan, Indonesia</p>
-                    <p><i class="fas fa-envelope"></i> alamsyahhanif828@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +6285693649674</p>
-                    <p><i class="fas fa-birthday-cake"></i> Jakarta, 07 Februari 2005</p>
+                <div class="footer-section fade-in" style="animation-delay: 0.2s;">
+                    <h3>Contact Details</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--accent);"></i>
+                            <span>South Jakarta, Indonesia</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-envelope" style="color: var(--accent);"></i>
+                            <span>alamsyahhanif828@gmail.com</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-phone" style="color: var(--accent);"></i>
+                            <span>+62 856 9364 9674</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <i class="fas fa-university" style="color: var(--accent);"></i>
+                            <span>Gunadarma University</span>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="footer-section">
-                    <h3>Portfolio & CV</h3>
-                    <p><i class="fas fa-external-link-alt"></i> LinkedIn: bit.ly/mhanifa</p>
-                    <p><i class="fas fa-briefcase"></i> Portfolio: bit.ly/HanifPorto</p>
-                    <a href="#home" class="btn" style="margin-top: 1rem;">Kembali ke Atas</a>
+                <div class="footer-section fade-in" style="animation-delay: 0.4s;">
+                    <h3>Quick Navigation</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <a href="#home" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;">
+                            <i class="fas fa-chevron-right" style="color: var(--accent); margin-right: 0.5rem;"></i>
+                            Home
+                        </a>
+                        <a href="#profile" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;">
+                            <i class="fas fa-chevron-right" style="color: var(--accent); margin-right: 0.5rem;"></i>
+                            Profile & Education
+                        </a>
+                        <a href="#experience" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;">
+                            <i class="fas fa-chevron-right" style="color: var(--accent); margin-right: 0.5rem;"></i>
+                            Professional Experience
+                        </a>
+                        <a href="#certificates" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;">
+                            <i class="fas fa-chevron-right" style="color: var(--accent); margin-right: 0.5rem;"></i>
+                            Certifications
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="copyright">
-                <p>&copy; 2025 Muhammad Hanif Alamsyah. Semua hak cipta dilindungi.</p>
+            <div class="copyright fade-in" style="animation-delay: 0.6s;">
+                <p>&copy; 2025 Muhammad Hanif Alamsyah. All rights reserved.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-tertiary);">
+                    Information Systems Student · Creative Professional · Digital Content Creator
+                </p>
             </div>
         </div>
     </footer>
